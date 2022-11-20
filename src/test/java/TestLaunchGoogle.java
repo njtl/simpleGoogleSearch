@@ -13,6 +13,7 @@ public class TestLaunchGoogle {
     @BeforeTest
     public void prepare(){
         wd = new ChromeDriver();
+        //wd = new FirefoxDriver();
         wd.get("https://google.com");
         wd.manage().window().maximize();
         wd.findElement(By.id("L2AGLb")).click();
